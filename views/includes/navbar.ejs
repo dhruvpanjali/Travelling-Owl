@@ -1,0 +1,97 @@
+<style>
+  @media(max-width: 1400px){
+    .navbar-brand{
+        margin-right: 22%;
+    }
+}
+  @media(max-width: 1200px){
+    .navbar-brand{
+        margin-right: 12%;
+    }
+  }
+  @media(max-width: 1000px){
+    .navbar-brand{
+        margin-right: 8%;
+    }
+  }
+  @media(max-width: 1024px){
+    .search-btn-container{
+        width: 20rem;
+    }
+  }
+/* ----------------------------- */
+@media(max-width: 768px){
+    .search-btn-container{
+        width: 13rem;
+    }
+    .country-select-container{
+        display: none;
+    }
+    #addListingBtn{
+        margin-bottom: 0.5rem;
+        margin-top: 0.8rem;
+    }
+    #optionalBtn{
+        margin-bottom: 0.5rem;
+        margin-top: 0.8rem;
+    }
+}
+  @media(max-width: 480px){
+    .navbar-brand{
+        margin-right: 0;
+    }
+    .search-btn-container{
+        width: 10rem;
+    }
+    .Brand-logo{
+      margin-right: 0.3rem;
+    }
+  }
+.Brand-logo{
+    height: 3.4rem !important;
+
+}
+</style>
+<nav class="navbar navbar-expand-lg sticky-top bg-light bg-gradient border-bottom ">
+  <div class="container-fluid py-1">
+    <a class="navbar-brand ms-1" href="/listings">
+      <img src="/images/TravellingOwlLogo.png" class="Brand-logo">
+    </a>
+
+    <form class="searchForm me-2" role="search" action="/listings/search">
+      <div class="search-btn-container">
+        <input class="form-control searchBar" type="search" placeholder="Search" aria-label="Search" size="30" name="q">
+        <div class="country-select-container">
+          <select class="form-select country-select my-1 me-2" name="country">
+            <option selected value="">Country</option>
+            <option value="India">India</option>
+            <option value="United States">USA</option>
+            <option value="Russia">Russia</option>
+            <option value="Italy">Italy</option>
+            <option value="Japan">Japan</option>
+          </select>
+        </div>
+        <button class="btn list-btn searchBtn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </form>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="ms-auto">
+        <a class="btn btn-outline-secondary" href="/listings/new" id="addListingBtn">Add new listing</a>
+        <% if(!currentUser){ %>
+          <a href="/signup" class="btn list-btn ms-3" role="button" id="optionalBtn">Signup</a>
+          <a href="/Login" class="btn list-btn ms-3" role="button" id="optionalBtn">Login</a>
+        <% } else { %>
+          <a href="/logout" class="btn list-btn ms-3" role="button" id="optionalBtn">Logout</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
+

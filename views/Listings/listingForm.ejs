@@ -1,0 +1,92 @@
+<% layout('/layouts/boilerplate') -%>
+
+<div class="row formContainer">
+    <div class="col-8 offset-2">
+        <h1>Add Your Listing</h1>
+        <form action="/listings" method="post" novalidate class="needs-validation" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="ttl" class="form-label">Enter Title:</label>
+                <input type="text" name="listing[title]" id="ttl" placeholder="Enter Title" class="form-control" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please give a valid title.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Enter Description:</label>
+                <textarea class="form-control" name="listing[description]" id="desc" required placeholder="Enter Description" rows="3" cols="30"></textarea>
+                <div class="invalid-feedback">
+                    Please give a valid description.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="img" class="form-label">Upload Image:</label>
+                <input type="file" name="listing[image]" class="form-control" id="img" required>
+                <div class="invalid-feedback">
+                    Please upload an image.
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label for="tags" class="form-label">Enter tags:</label>
+                    <input type="text" name="listing[tags]" id="tags" placeholder="Eg. urban,seafacing,trees" class="form-control" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter tags.
+                    </div>
+                </div>
+                <div class="mb-3 col-md-8">
+                    <label for="category" class="form-label">Choose Category:</label>
+                    <select class="form-select" id="category" name="listing[category]">
+                        <option selected>select</option>
+                        <option value="Beach">Beach</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Tropical">Tropical</option>
+                        <option value="Farmhouse">Farmhouse</option>
+                        <option value="Forest">Forest</option>
+                        <option value="Mountains">Mountains</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Enter Price:</label>
+                <input type="text" name="listing[price]" class="form-control" required id="price" placeholder="Enter Price">
+                <div class="invalid-feedback">
+                    Please enters a valid price.
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-md-4">
+                    <label for="loc" class="form-label">Enter Location:</label>
+                    <input type="text" name="listing[location]" required class="form-control" id="loc" placeholder="Enter Location">
+                    <div class="invalid-feedback">
+                        Please enters a valid location.
+                    </div>
+                </div>
+                <div class="mb-3 col-md-8">
+                    <label for="cntry" class="form-label">Enter Country:</label>
+                    <input type="text" name="listing[country]" required class="form-control" id="cntry" placeholder="Enter Country">
+                    <div class="invalid-feedback">
+                        Please enters a valid country.
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <button class="btn btn-dark list-btn">Submit</button>
+            <br><br><br>
+        </form>
+    </div>
+</div>
+
+<!-- <script>
+    let tags = document.getElementById("tags");
+    tags.addEventListener("input", ()=>{
+        tags.value = `[${tags.value}]`;
+        console.log(tags.value);
+    });
+</script> -->
+

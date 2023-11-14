@@ -1,0 +1,24 @@
+/* listing form */
+.container{
+    flex: 1;
+}
+.formContainer{
+    margin-top: 3rem !important;
+}
+.formContainer form{
+    margin-top: 2rem;
+}
+.list-btn{
+    color: white !important;
+    background-color: rgb(173, 11, 11) !important;
+    border: none !important;
+    transition: background-color 0.2s 0s ease-in; 
+}
+.list-btn:hover{
+    background-color: rgb(155, 9, 9) !important;
+}
+
+/* Edit form */
+.image-preview{
+    border-radius: 0.5rem;
+}

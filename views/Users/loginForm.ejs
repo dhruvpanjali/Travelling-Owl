@@ -1,0 +1,29 @@
+<% layout('/layouts/boilerplate') -%>
+<div class="row formContainer">
+    <div class="col-6 offset-3">
+        <h1>Login</h1>
+        <form action="/login" method="post" novalidate class="needs-validation">
+            <div class="mb-3">
+                <label for="username" class="form-label">Enter Username:</label>
+                <input type="text" name="username" id="username" placeholder="Enter username" class="form-control" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Username can't be empty
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="pass" class="form-label">Enter Password:</label>
+                <input type="password" name="password" class="form-control" id="pass" placeholder="Enter Password" required>
+                <div class="invalid-feedback">
+                    Password can't be empty
+                </div>
+            </div>
+            <br>
+            <button class="btn list-btn">Login</button>
+            <a href="/signup" class="btn list-btn ms-3" role="button">New User</a>
+            <br><br><br>
+        </form>
+    </div>
+</div>

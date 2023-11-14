@@ -1,0 +1,35 @@
+/* listing card */
+.list-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+    text-decoration: none !important;
+}
+.card-text{
+    margin-top: 0.5rem;
+}
+.row a{
+    text-decoration: none;
+}
+.card-img-overlay{
+    background-color: white;
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+}
+
+/* show card */
+.show-btn-edit{
+    margin-right: 2rem;
+}
+.del-form{
+    display: inline-block;
+}

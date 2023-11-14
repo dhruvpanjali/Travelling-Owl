@@ -1,0 +1,42 @@
+/* Categories */
+@media(max-width: 768px){
+    .tax-switch-container{
+        margin: 0;
+    }
+}
+@media(max-width: 480px){
+    .form-check{
+        margin-top: 1rem;
+    }
+}
+.cat-card{
+    border: none !important;
+    cursor: pointer;
+}
+.cat-card a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7 !important;
+    transition: opacity 0.2s 0s ease-in; 
+}
+.cat-card a:hover{
+    opacity: 1 !important;
+}
+.form-check{
+    height: 20%;
+    border: 0.1rem solid rgba(0, 0, 0, 0.541) ;
+    border-radius: 2rem;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 0.7rem !important;
+    padding-bottom: 0.7rem !important;
+}
+.form-check-input{
+    margin-right: 0.1rem !important;
+    font-size: larger;
+    cursor: pointer;
+}
+.form-check-label{
+    margin-right: 0.5rem;
+    cursor: pointer;
+}

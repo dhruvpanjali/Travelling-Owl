@@ -1,0 +1,27 @@
+<% layout('/layouts/boilerplate') -%>
+<%- include("../includes/categories.ejs") %>
+
+<h1 class="hero-head"><span><%= count %> 
+    <% if(count>1){ %> Listings found
+    <% } else{ %>Listing found <% } %>
+    </span>
+</h1> 
+
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+    <%  for(listing of listings){ %>
+    <a href="/listings/<%= listing._id %>">
+        <div class="card list-card">
+            <img src="<%= listing.image.url %>" class="card-img-top" alt="alt-img" style="height: 20rem;">
+            <div class="card-body">
+                <p class="card-text"><b><%= listing.title %></b></p>
+                <p class="card-text" id="beforeTax">&#8377; <%= listing.price.toLocaleString("en-IN") %>&nbsp;&nbsp;<i>before taxes</i></p>
+                <p class="card-text" id="afterTax" style="display: none;">&#8377; <%= (listing.price + listing.price*0.18).toLocaleString("en-IN") %>&nbsp;&nbsp;<i>after taxes</i></p>
+            </div>
+            <div class="card-img-overlay">
+            </div>
+        </div>
+    </a>
+    <%  } %>
+</div>
+
+<script src="/js/categories.js"></script>
