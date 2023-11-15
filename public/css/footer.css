@@ -1,4 +1,9 @@
 /* footer */
+@media(max-width: 488px){
+    .brand-name, .text-along{
+        font-size: 0.95rem;
+    }
+}
 .ft-container{
     font-size: 1.1rem;
     display: flex;
@@ -12,17 +17,34 @@
 .socials{
     font-size: 1.4rem;
 }
-.socials i{
-    cursor: pointer;
-    transition: transform linear 0.1s 0s;
-}
-.socials i:hover{
-    transform: scale(1.2);
-}
 .ft-info a{
     text-decoration: none;
     color: black;
 }
 .ft-info a:hover{
     text-decoration: underline;
+}
+.brand-name span{
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 1rem;
+    margin-left: 0.3rem;
+}
+.socials a{
+    color: black;
+}
+.socials .lnkd-logo{
+    cursor: pointer;
+    transition: all linear 0.1s 0s;
+}
+.socials .gthb-logo{
+    cursor: pointer;
+    transition: all linear 0.1s 0s;
+}
+.lnkd-logo:hover{
+    transform: scale(1.2);
+    color: #0b65c3;
+}
+.gthb-logo:hover{
+    transform: scale(1.2);
+    color: #0d1017;
 }
