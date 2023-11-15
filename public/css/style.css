@@ -15,11 +15,3 @@ span{
     font-size: 1.5rem;
     color: grey;
 }
-
-/* Map */
-#map { 
-    box-shadow: 0.25rem 0.25rem 1rem rgba(87, 87, 87, 0.651);
-    border-radius: 0.5rem;
-    height: 25rem;
-    width: 80vh; 
-}

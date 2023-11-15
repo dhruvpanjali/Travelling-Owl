@@ -1,4 +1,7 @@
 <% layout('/layouts/boilerplate') -%>
+<head>
+    <link href="/css/showCardPortrait.css" rel="stylesheet">
+</head>
 <script>
     const mapToken = "<%= process.env.MAP_TOKEN %>";
     const listing = <%- JSON.stringify(listing) %>;
@@ -8,7 +11,7 @@
         <%= listing.title %>&nbsp;&nbsp;&nbsp;
         <span>Listed by: <b><%= listing.owner.username %></b></span>
     </h2>
-    <img src="<%= listing.image.url %>" class="card-img-top" alt="alt-img" style="width: 20rem; height: 25rem;">
+    <img src="<%= listing.image.url %>" class="card-img-top show-img" alt="alt-img" style="width: 20rem; height: 25rem;">
     <div class="card-body mt-2">
         <p class="card-text"><%= listing.description %></p>
         <p class="card-text">&#8377; <%= listing.price.toLocaleString("en-IN") %></p>
@@ -88,7 +91,7 @@
     <div class="col-10">
         <hr>
         <h3>Where you'll be</h3>
-        <div id="map"></div>
+        <div id="map" class="map-div"></div>
     </div>
 </div>
 <script src="/js/map.js"></script>

@@ -1,0 +1,51 @@
+@media(max-width: 1400px){
+    .navbar-brand{
+        margin-right: 18%;
+    }
+  }
+  @media(max-width: 1200px){
+    .navbar-brand{
+        margin-right: 10%;
+    }
+  }
+  @media(max-width: 1000px){
+    .navbar-brand{
+        margin-right: 5%;
+    }
+  }
+  @media(max-width: 1024px){
+    .search-btn-container{
+        width: 20rem;
+    }
+  }
+/* ----------------------------- */
+@media(max-width: 768px){
+    .search-btn-container{
+        width: 13rem;
+    }
+    .country-select-container{
+        display: none;
+    }
+    #addListingBtn{
+        margin-bottom: 0.5rem;
+        margin-top: 0.8rem;
+    }
+    #optionalBtn{
+        margin-bottom: 0.5rem;
+        margin-top: 0.8rem;
+    }
+}
+  @media(max-width: 480px){
+    .navbar-brand{
+        margin-right: 0;
+    }
+    .search-btn-container{
+        width: 10rem;
+    }
+    .Brand-logo{
+      margin-right: 0.3rem;
+    }
+  }
+.Brand-logo{
+    height: 3.4rem !important;
+}

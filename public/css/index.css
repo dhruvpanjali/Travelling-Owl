@@ -1,7 +1,7 @@
 /* listing card */
 .list-card{
     border: none !important;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem !important;
 }
 .card-img-top{
     border-radius: 1rem !important;
@@ -13,7 +13,9 @@
     text-decoration: none !important;
 }
 .card-text{
-    margin-top: 0.5rem;
+    padding: 0.5rem 0 0.5rem 0;
+    margin-left: 0.2rem;
+    margin-bottom: 0;
 }
 .row a{
     text-decoration: none;

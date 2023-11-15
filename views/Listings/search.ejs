@@ -15,7 +15,7 @@
             <div class="card-body">
                 <p class="card-text"><b><%= listing.title %></b></p>
                 <p class="card-text" id="beforeTax">&#8377; <%= listing.price.toLocaleString("en-IN") %>&nbsp;&nbsp;<i>before taxes</i></p>
-                <p class="card-text" id="afterTax" style="display: none;">&#8377; <%= (listing.price + listing.price*0.18).toLocaleString("en-IN") %>&nbsp;&nbsp;<i>after taxes</i></p>
+                <p class="card-text d-none" id="afterTax">&#8377; <%= (listing.price + listing.price*0.18).toLocaleString("en-IN") %>&nbsp;&nbsp;<i>after taxes</i></p>
             </div>
             <div class="card-img-overlay">
             </div>
@@ -23,5 +23,4 @@
     </a>
     <%  } %>
 </div>
-
 <script src="/js/categories.js"></script>
